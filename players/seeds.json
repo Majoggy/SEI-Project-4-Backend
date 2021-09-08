@@ -1,0 +1,42 @@
+[
+{
+  "model": "players.player",
+  "pk": 1,
+  "fields": {
+    "name": "Christian Baker",
+    "image": ""
+  }
+},
+{
+  "model": "players.player",
+  "pk": 2,
+  "fields": {
+    "name": "Simon Davies",
+    "image": ""
+  }
+},
+{
+  "model": "players.player",
+  "pk": 3,
+  "fields": {
+    "name": "Liam Curran",
+    "image": ""
+  }
+},
+{
+  "model": "players.player",
+  "pk": 4,
+  "fields": {
+    "name": "Craig Fitzgerald",
+    "image": ""
+  }
+},
+{
+  "model": "players.player",
+  "pk": 5,
+  "fields": {
+    "name": "Ed Perry",
+    "image": ""
+  }
+}
+]
