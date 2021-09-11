@@ -61,6 +61,7 @@ class Game(models.Model):
     prize_for_third = models.FloatField()
     date = models.CharField(max_length=20)
     name = models.CharField(max_length=50)
+    number_of_players = models.IntegerField()
 
     def __str__(self):
         return f'{self.name} - {self.date}'

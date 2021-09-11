@@ -8,7 +8,7 @@ from .models import Game
 from .serializers import GameSerializer, PopulatedGameSerializer
 
 class GameListView(APIView):
-    permission_classes = (IsAuthenticated,)
+    # permission_classes = (IsAuthenticated,)
 
     ''' List View for /players INDEX CREATE '''
     def post(self, request):
@@ -24,7 +24,7 @@ class GameListView(APIView):
         return Response(serialized_games.data)
 
 class GameDetailView(RetrieveDestroyAPIView):
-    permission_classes = (IsAuthenticated,)
+    # permission_classes = (IsAuthenticated,)
 
     ''' Detail View for /players SHOW UPDATE DELETE'''
     queryset = Game.objects.all()
@@ -41,3 +41,5 @@ class GameDetailView(RetrieveDestroyAPIView):
             serialized_game.save()
             return Response(serialized_game.data)
         return Response(serialized_game.errors)
+
+        # Authentication currently commented out!
