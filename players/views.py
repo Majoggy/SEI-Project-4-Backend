@@ -9,6 +9,7 @@ class PlayerListView(ListCreateAPIView):
     queryset = Player.objects.all()
     serializer_class = PlayerSerializer
     # permission_classes = (IsAuthenticated,)
+    
 
 class PlayerDetailView(RetrieveUpdateDestroyAPIView):
     ''' Detail View for /players SHOW UPDATE '''

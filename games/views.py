@@ -16,7 +16,7 @@ class GameListView(APIView):
         if serialized_game.is_valid():
             serialized_game.save()
             return Response(serialized_game.data)
-        return Response(serialized_game.errors)
+        return Response(serialized_game.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
 
     def get(self, request):
         games = Game.objects.all()
@@ -40,6 +40,6 @@ class GameDetailView(RetrieveDestroyAPIView):
         if serialized_game.is_valid():
             serialized_game.save()
             return Response(serialized_game.data)
-        return Response(serialized_game.errors)
+        return Response(serialized_game.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
 
         # Authentication currently commented out!
