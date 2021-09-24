@@ -6,7 +6,6 @@ from rest_framework import status
 from django.contrib.auth import get_user_model
 from django.conf import settings
 import jwt
-from rest_framework.permissions import IsAuthenticated
 
 from .serializers import UserRegistrationSerializer
 
